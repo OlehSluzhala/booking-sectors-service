@@ -37,7 +37,7 @@ namespace SoftServe.BookingSectors.WebAPI.Data.Helpers
                 .AddJsonFile("appsettings.json");
 
             var config = builder.Build();
-            var value = config.GetValue<string>("ServiceBusConnectionString");
+            var value = config.GetValue<string>("AzureConnectionString");
 
 
             return value;
