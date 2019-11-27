@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using SoftServe.BookingSectors.WebAPI.Data.Models;
 
-namespace SoftServe.BookingSectors.Data.GenericRepository
+namespace SoftServe.BookingSectors.WebAPI.Data.GenericRepository
 {
     public interface IGenericRepository<T> where T : class
     {

@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using SoftServe.BookingSectors.WebAPI.Data.Helpers;
 
 namespace SoftServe.BookingSectors.WebAPI.Data.Models
 {
@@ -28,8 +29,7 @@ namespace SoftServe.BookingSectors.WebAPI.Data.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=tcp:lv458net.database.windows.net,1433;Initial Catalog=BookingSector;Persist Security Info=False;User ID=student;Password=Lv-458.Net;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+               optionsBuilder.UseSqlServer(@ConfigurationHelper.GetDatabaseConnectionString());
             }
         }
 

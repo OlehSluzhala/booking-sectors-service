@@ -4,9 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
 
 
-
-
-namespace SoftServe.BookingSectors.Helpers
+namespace SoftServe.BookingSectors.WebAPI.Data.Helpers
 {
     /// <summary>
     /// Helper for obtaining connection data

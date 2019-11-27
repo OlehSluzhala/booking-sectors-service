@@ -5,7 +5,7 @@ using SoftServe.BookingSectors.WebAPI.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace SoftServe.BookingSectors.Data.GenericRepository
+namespace SoftServe.BookingSectors.WebAPI.Data.GenericRepository
 {
     public sealed class GenericRepository<T>: IDisposable, IGenericRepository<T> where T : class
     {
